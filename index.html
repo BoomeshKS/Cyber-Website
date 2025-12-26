@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from html.awaikenthemes.com/proshield/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Dec 2025 13:50:56 GMT -->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+    <title>Proshield - Cyber Security Services HTML Template</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader1">
+        <div class="central-hub1">
+
+            <!-- Logo & Animated Ring -->
+            <div class="logo-wrapper1">
+                <div class="cyber-ring1"></div>
+                <div class="logo-box1">
+                    <img src="myimg/New_Project_37__FA1BF28_-removebg-preview.png" alt="Logo">
+                </div>
+            </div>
+
+            <!-- Brand Name -->
+            <div class="brand-display1">
+                <div class="word1" id="word-nalaemton1"></div>
+                <div class="word1" id="word-infotech1"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const word1 = "Nalaemton";
+    const word2 = "Infotech";
+
+    const container1 = document.getElementById("word-nalaemton1");
+    const container2 = document.getElementById("word-infotech1");
+
+    function buildWord(text, container) {
+        const letters = [];
+        text.split("").forEach((char, i) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.classList.add("letter1");
+            if (i === 0) span.classList.add("initial1");
+            container.appendChild(span);
+            letters.push(span);
+        });
+        return letters;
+    }
+
+    const letters1 = buildWord(word1, container1);
+    const letters2 = buildWord(word2, container2);
+
+    function revealLetters(letters, delayStart = 0) {
+        letters.forEach((letter, index) => {
+            setTimeout(() => {
+                letter.classList.add("reveal1");
+            }, delayStart + index * 45); // ⚡ faster
+        });
+    }
+
+    revealLetters(letters1, 60);
+    revealLetters(letters2, 60 + letters1.length * 45);
+
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            document.querySelector(".preloader1").classList.add("fade-out1");
+            document.body.style.overflow = "auto";
+        }, 1200); // faster exit
+    });
+
+});
+</script>
+
+
+
+
+    <!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+                    <style>
+                        .navbar {
+                            height: 100px;                 
+                            padding: 0 1.25rem;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                        }
+
+                        .navbar-brand {
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+                        }
+
+                        /* Your logo size */
+                        .nav-logo {
+                            margin-top: 10px;
+                            max-height: 136px;
+                            width: auto;
+                            object-fit: contain;
+                        }
+
+                        .navbar-toggler {
+                            align-self: center;
+                        }
+
+                        /* Mobile fine tuning */
+                        @media (max-width: 768px) {
+                            .navbar {
+                                height: 64px;
+                            }
+
+                            .nav-logo {
+                                max-height: 120px;
+                                margin-top: -22px;
+                            }
+                            .navbar-toggle {
+                                margin-top: -30px;
+                            }
+                        }
+
+                    </style>
+					<!-- Logo Start -->
+                    <a class="navbar-brand" href="index-2.html">
+                        <img src="myimg/colored-logo.png" alt="Logo" class="nav-logo">
+                    </a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hero">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Services</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Header Button -->
+                        <div class="header-btn">
+                            <a href="#contact" class="btn-default">Get Started</a>
+                        </div>
+                    </div>
+
+					<!-- Main Menu End -->
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero parallaxie" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+
+                        <!-- Section Title Start -->
+                        <div class="section-title dark-section">
+                            <h3 class="wow fadeInUp">
+                                Nalaemton Infotech
+                            </h3>
+
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                                Your Partner in Building<br>
+                                Resilient Digital Infrastructure
+                            </h1>
+
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">
+                                We deliver high-assurance cybersecurity solutions that keep your
+                                digital ecosystem protected, compliant, and ahead of real-world threats.
+                            </p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
+
+                            <!-- Hero Button Start -->
+                            <div class="hero-btn">
+                                <a href="#contact" class="btn-default btn-highlighted">
+                                    Contact Us
+                                </a>
+                            </div>
+                            <!-- Hero Button End -->
+
+                        </div>
+                        <!-- Hero Content Body End -->
+
+                        <!-- Hero Content Footer Start -->
+                        <div class="hero-content-footer">
+
+                            <!-- Hero List Start -->
+                            <div class="hero-list wow fadeInUp" data-wow-delay="0.8s">
+                                <ul>
+                                    <li>Application & API Security (AppSec)</li>
+                                    <li>VAPT & Advanced Threat Simulation</li>
+                                    <li>Cloud Security & Security Consulting</li>
+                                    <li>Training & Security Awareness Programs</li>
+                                </ul>
+                            </div>
+                            <!-- Hero List End -->
+
+                        </div>
+                        <!-- Hero Content Footer End -->
+
+                    </div>
+                    <!-- Hero Content End -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+
+    <!-- About Us Section Start -->
+    <div class="about-us" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- About Us Content (LEFT) -->
+                <div class="col-lg-6">
+                    <div class="about-us-content">
+
+                        <!-- Section Title -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">about us</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                                Cybersecurity focused <span>security solutions</span>
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">
+                                Nalaemton Infotech helps organizations protect applications,
+                                systems, and digital assets from real-world threats.
+                            </p>
+                        </div>
+
+                        <!-- About Body -->
+                        <div class="about-us-body wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="about-us-body-img">
+                                <figure class="image-anime">
+                                    <img src="myimg/about/about-small.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="about-us-body-content">
+                                <h3>Practical security approach</h3>
+                                <p>
+                                    We combine hands-on testing, industry experience,
+                                    and clear communication to fix what truly matters.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- About Footer -->
+                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="about-footer-list">
+                                <ul>
+                                    <li>Application & API security testing</li>
+                                    <li>Vulnerability assessment & remediation</li>
+                                    <li>Security awareness & training</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- About Us Image (RIGHT) -->
+                <div class="col-lg-6">
+                    <div class="about-us-image">
+
+                        <div class="about-image-box about-img-1">
+                            <figure class="image-anime reveal">
+                                <img src="myimg/about/about-1.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="about-image-box">
+                            <div class="about-img-2">
+                                <figure class="image-anime reveal">
+                                    <img src="myimg/about/about-2.jpg" alt="">
+                                </figure>
+                            </div>
+
+                            <div class="about-img-3">
+                                <figure class="image-anime reveal">
+                                    <img src="myimg/about/about-3.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+    
+    <!-- Our Services Section Start -->
+    <div class="our-services" id="services">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Services Image (LEFT) -->
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="services-image">
+                        <figure class="image-anime reveal">
+                            <img src="myimg/service/ser-1.jpg" alt="Cybersecurity Services" class="img-fluid rounded-4">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Services Content (RIGHT) -->
+                <div class="col-lg-7">
+
+                    <!-- Section Title -->
+                    <div class="section-title mb-4 dark-section">
+                        <h3 class="wow fadeInUp">our services</h3>
+                        <h2 class="wow fadeInUp text-light" data-wow-delay="0.2s" data-cursor="-opaque">
+                            Focused cybersecurity <span>services that matter</span>
+                        </h2>
+                    </div>
+
+                    <!-- Services Boxes -->
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="p-4 h-100 border rounded-4 wow fadeInUp">
+                                <h5 style="color: white;" >Application Security (AppSec)</h5>
+                                <p class="mb-0">
+                                    Security testing for web, API, and mobile applications to identify real risks.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 h-100 border rounded-4 wow fadeInUp" data-wow-delay="0.1s">
+                                <h5 style="color: white;">VAPT Services</h5>
+                                <p class="mb-0">
+                                    Vulnerability assessment and penetration testing to uncover exploitable issues.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 h-100 border rounded-4 wow fadeInUp" data-wow-delay="0.2s">
+                                <h5 style="color: white;">Cloud Security</h5>
+                                <p class="mb-0">
+                                    Securing cloud environments using best practices and compliance controls.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 h-100 border rounded-4 wow fadeInUp" data-wow-delay="0.3s">
+                                <h5 style="color: white;">Security Consulting</h5>
+                                <p class="mb-0">
+                                    Expert guidance to strengthen security posture and reduce business risk.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 h-100 border rounded-4 wow fadeInUp" data-wow-delay="0.4s">
+                                <h5 style="color: white;">Advanced Threat Simulation</h5>
+                                <p class="mb-0">
+                                    Simulating real-world attacks to test detection and response readiness.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 h-100 border rounded-4 wow fadeInUp" data-wow-delay="0.5s">
+                                <h5 style="color: white;">Training & Workshops</h5>
+                                <p class="mb-0">
+                                    Hands-on training to build a strong security-first mindset.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Services Boxes End -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+
+
+
+    <!-- Our Feature Section Start -->
+    <div class="our-feature" id="features">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Feature Images (LEFT) -->
+                <div class="col-lg-6">
+                    <div class="our-feature-images">
+
+                        <div class="feature-image">
+                            <figure class="image-anime reveal">
+                                <img src="myimg/our feature/our-feature-1 (1).jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="company-experience-info">
+                            <div class="feature-image">
+                                <figure class="image-anime reveal">
+                                    <img src="myimg/our feature/our-feature-1 (2).png" alt="">
+                                </figure>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Feature Content (RIGHT) -->
+                <div class="col-lg-6">
+                    <div class="our-feature-content">
+
+                        <!-- Section Title -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">our approach</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                                Practical security <span>that delivers results</span>
+                            </h2>
+                        </div>
+
+                        <!-- Feature List -->
+                        <div class="ferature-list">
+
+                            <div class="ferature-list-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon-box">
+                                    <img src="images/icon-ferature-1.svg" alt="">
+                                </div>
+                                <div class="ferature-list-content">
+                                    <h3>Real-world risk assessment</h3>
+                                    <p>
+                                        Identify vulnerabilities that matter through practical
+                                        and hands-on security testing.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="ferature-list-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="images/icon-ferature-2.svg" alt="">
+                                </div>
+                                <div class="ferature-list-content">
+                                    <h3>Actionable remediation guidance</h3>
+                                    <p>
+                                        Clear, prioritized fixes that help teams
+                                        reduce risk efficiently.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="ferature-list-item wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="icon-box">
+                                    <img src="images/icon-ferature-3.svg" alt="">
+                                </div>
+                                <div class="ferature-list-content">
+                                    <h3>Security-first mindset</h3>
+                                    <p>
+                                        Building awareness and resilience across
+                                        development and operations teams.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Feature List End -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Our Feature Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Image -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="why-choose-image">
+                        <figure class="image-anime reveal">
+                            <img src="myimg/why we choose us/wwu-1.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6">
+                    <div class="why-choose-content">
+
+                        <!-- Section Title -->
+                        <div class="section-title dark-section mb-4">
+                            <h3 class="wow fadeInUp">why choose us</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                                Security built on trust<br>and real expertise
+                            </h2>
+                        </div>
+
+                        <!-- Text Boxes -->
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                    <h5 class="mb-2 text-light ">Proven expertise</h5>
+                                    <p class="mb-0">
+                                        Hands-on cybersecurity experience across applications,
+                                        infrastructure, and cloud environments.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded h-100 wow fadeInUp" data-wow-delay="0.6s">
+                                    <h5 class="mb-2 text-light">Practical approach</h5>
+                                    <p class="mb-0">
+                                        We focus on real risks and practical fixes,
+                                        not theoretical vulnerabilities.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded h-100 wow fadeInUp" data-wow-delay="0.8s">
+                                    <h5 class="mb-2 text-light">Clear communication</h5>
+                                    <p class="mb-0">
+                                        Findings explained in a way that technical
+                                        and business teams can act on.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded h-100 wow fadeInUp" data-wow-delay="1s">
+                                    <h5 class="mb-2 text-light">Security-first mindset</h5>
+                                    <p class="mb-0">
+                                        Helping teams build long-term security awareness
+                                        beyond one-time assessments.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Text Boxes End -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+
+    <!-- CTA Box Section Start -->
+    <div class="cta-box-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- CTA Box Start -->
+                    <div class="cta-box">
+                        <!-- CTA Box Content Start -->
+                        <div class="cta-box-content">
+                            <!-- Section Title Start -->
+                            <div class="section-title dark-section">
+                                <h2 class="wow fadeInUp" data-cursor="-opaque">Protect business, cyber security solution today!</h2>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <!-- CTA Contact Info Start -->
+                            <div class="cta-contact-info">
+                                <!-- CTA Contact Item Start -->
+                                <div class="cta-contact-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-phone.svg" alt="">
+                                    </div>
+                                    <div class="cta-contact-content">
+                                        <h3>Get contact now</h3>
+                                        <p><a href="tel:+123456789">+123 456 789</a></p>
+                                    </div>
+                                </div>
+                                <!-- CTA Contact Item End -->
+                                
+                                <!-- CTA Contact Item Start -->
+                                <div class="cta-contact-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-mail.svg" alt="">
+                                    </div>
+                                    <div class="cta-contact-content">
+                                        <h3>Sent e-mail</h3>
+                                        <p><a href="mailto:business@nalaemton.com">business@nalaemton.com</a></p>
+                                    </div>
+                                </div>
+                                <!-- CTA Contact Item End -->
+                            </div>
+                            <!-- CTA Contact Info End -->
+                            <!-- Social Icons (Below Phone & Email) -->
+                                <div class="cta-social-links mt-3">
+                                    <a href="https://www.linkedin.com/company/nalaemton"
+                                    target="_blank"
+                                    class="text-white me-3">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+
+                                    <a href="https://x.com/nalaemtonglobal"
+                                    target="_blank"
+                                    class="text-white me-3">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+
+                                    <a href="https://www.instagram.com/nalaemtoninfotech/"
+                                    target="_blank"
+                                    class="text-white me-3">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+
+                                    <a href="https://www.youtube.com/@nalaemtoninfotech"
+                                    target="_blank"
+                                    class="text-white">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+
+                        </div>
+                        <!-- CTA Box Content End -->
+
+                        <!-- CTA Box Image Start -->
+                        <div class="cta-box-image">
+                            <figure class="image-anime reveal">
+                                <img src="images/cta-box-image.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- CTA Box Image End -->
+                    </div>
+                    <!-- CTA Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Box Section End -->
+
+    <!-- Our Faqs Section Start -->
+    <div class="our-faqs home-our-faqs">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <!-- Faqs Content Start -->
+                    <div class="faq-content">
+
+                        <!-- Section Title Start -->
+                        <div class="section-title dark-section">
+                            <h3 class="wow fadeInUp">faq</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: white;">
+                                Common security questions <span>answered clearly</span>
+                            </h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Faqs Image Start -->
+                        <div class="faq-image">
+                            <figure class="image-anime reveal">
+                                <img src="myimg/faq/faq.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Faqs Image End -->
+
+                    </div>
+                    <!-- Faqs Content End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- FAQ Accordion Start -->
+                    <div class="faq-accordion" id="accordion">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    What services does Nalaemton Infotech provide?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show"
+                                aria-labelledby="heading1" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        We provide application security testing, VAPT services, cloud security,
+                                        security consulting, and hands-on training & workshops tailored to real-world risks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Who do you work with?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse"
+                                aria-labelledby="heading2" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        We work with startups, enterprises, and educational institutions to
+                                        identify security gaps, strengthen defenses, and improve overall security posture.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    How is your approach different?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse"
+                                aria-labelledby="heading3" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Our approach is practical and outcome-driven, combining hands-on testing,
+                                        industry experience, and clear communication to fix what truly matters.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    How can we get started?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse"
+                                aria-labelledby="heading4" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        You can reach out through the contact form on this page.
+                                        Our team will connect with you to understand your needs and guide next steps.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                    </div>
+                    <!-- FAQ Accordion End -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Our Faqs Section End -->
+
+
+    <!-- Page Contact Us Start -->
+    <div class="page-contact-us" id="contact" >
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">contact us</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Do you have questions? <span>ask us anytime</span></h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Page Contact Box Start -->
+                    <div class="page-contact-box parallaxie">
+                        <!-- Contact Info List Start -->
+                        <div class="contact-info-list">
+                            <!-- Contact Info Item Start -->
+                            <div class="contact-info-item wow fadeInUp">
+                                <div class="icon-box">
+                                    <img src="images/icon-phone-accent.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <h3>contact us</h3>
+                                    <p><a href="tel:+91123456789">+91-123 456 789</a></p>
+                                </div>
+                            </div>
+                            <!-- Contact Info Item End -->
+
+                            <!-- Contact Info Item Start -->
+                            <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="icon-box">
+                                    <img src="images/icon-mail-accent.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <h3>e-mail us</h3>
+                                    <p><a href="mailto:domainname@gmail.com">business@nalaemton.com</a></p>
+                                </div>
+                            </div>
+                            <!-- Contact Info Item End -->
+
+                            <!-- Contact Info Item Start -->
+                            <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="icon-box">
+                                    <img src="images/icon-location.svg" alt="">
+                                </div>
+                                <div class="contact-info-content">
+                                    <h3>our location</h3>
+                                    <p>Chennai, Tamil Nadu</p>
+                                </div>
+                            </div>
+                            <!-- Contact Info Item End -->
+                        </div>
+                        <!-- Contact Info List End -->
+
+                        <div class="contact-us-form">
+                            <!-- Section Title Start -->
+                            <div class="section-title dark-section wow fadeInUp">
+                                <h2 class="wow fadeInUp" data-cursor="-opaque">Get in touch with us</h2>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <div class="member-contact-form contact-form">
+                                <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="row">                                
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="text" name="fname" class="form-control" id="fname" placeholder="First name" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+        
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+        
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Your Phone No." required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+        
+                                        <div class="form-group col-md-6 mb-4">
+                                            <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Your E-mail" required>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+        
+                                        <div class="form-group col-md-12 mb-5">
+                                            <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+        
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn-default btn-highlighted"><span>submit message</span></button>
+                                            <div id="msgSubmit" class="h3 hidden"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Contact Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Contact Us End -->
+
+    <!-- Main Footer Section Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- Footer Header -->
+                    <div class="footer-header">
+
+                        <!-- Logo -->
+                        <div class="footer-logo">
+                            <img src="myimg/New_Project_35__988590E_-removebg-preview.png" alt="Nalaemton Infotech">
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="footer-social-links">
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/nalaemton" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/nalaemtonglobal" target="_blank">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nalaemtoninfotech/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@nalaemtoninfotech" target="_blank">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>About Nalaemton</h3>
+                        <p>
+                            Nalaemton Infotech delivers practical, high-assurance cybersecurity
+                            solutions to protect applications, systems, and digital assets
+                            from real-world threats.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="footer-links">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Application Security (AppSec)</li>
+                            <li>VAPT Services</li>
+                            <li>Cloud Security</li>
+                            <li>Security Consulting</li>
+                            <li>Training & Workshops</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="footer-links">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li>
+                                <a href="mailto:business@nalaemton.com">
+                                    business@nalaemton.com
+                                </a>
+                            </li>
+                            <li>
+                                Cybersecurity Consulting & Services
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-copyright-text">
+                            <p>© 2025 Nalaemton Infotech. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Main Footer Section End -->
+
+    
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+	<script src="../../demo.awaikenthemes.com/assets/js/theme-panel.js"></script>
+</body>
+
+<!-- Mirrored from html.awaikenthemes.com/proshield/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Dec 2025 13:51:19 GMT -->
+</html>
